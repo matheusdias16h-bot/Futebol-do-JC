@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Futebol do JC</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+</head>
+<body>
+  <header>Futebol do JC</header>
+  <main>
+    <div id="registration">
+      <input type="text" id="playerName" placeholder="Digite seu nome">
+      <select id="playerType">
+        <option value="line">Jogador de Linha</option>
+        <option value="goalkeeper">Goleiro</option>
+      </select>
+      <button id="joinBtn">Entrar na Lista</button>
+    </div>
+
+    <div class="info" id="gameDateInfo"></div>
+
+    <h2>Lista de Jogadores</h2>
+    <ul id="playerList"></ul>
+
+    <div class="info" id="status"></div>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
